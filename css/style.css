@@ -1,0 +1,128 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+/* *{ */
+/*   box-sizing: border-box; */
+/* } */
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* img{ */
+/*   display: block; */
+/*   margin: 0 auto; */
+/* } */
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#paw-image {
+    width: 100px; /* adjust as needed */
+    height: auto;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#new-dog {
+    background-color: #333; /* dark background */
+    color: white; /* light text */
+    border: none; /* remove default button border */
+    padding: 10px 20px; /* add some padding */
+    cursor: pointer; /* change cursor on hover */
+    border-radius: 10px;
+}
+
+#new-dog:hover {
+    background-color: #555; /* slightly lighter background on hover */
+}
+
+#dog-container {
+    margin-top: 20px;
+}
+
+#dog-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* footer { */
+/*     /1* padding: 10px 0; *1/ */
+/*         /1* Styles for your footer *1/ */
+/*     height: 3em; /1* Set the desired height for your footer *1/ */
+/*     background-color: #333; /1* Adjust the background color as needed *1/ */
+/*     color: #fff; /1* Adjust the text color as needed *1/ */
+/*     text-align: center; /1* Center the content horizontally *1/ */
+/*     line-height: 1em;/1* Center the content vertically *1/ */
+
+/* } */
+
+/* Add your CSS styles for header, wrapper, and other elements here */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer h3 {
+    font-size: 18px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
