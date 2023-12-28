@@ -1,5 +1,6 @@
 // Wait for the image to load
 window.addEventListener('load', function () {
+    callApi();
     var img = document.getElementById('dog-image');
 
     // Set explicit width and height attributes for the image
@@ -7,8 +8,10 @@ window.addEventListener('load', function () {
     img.height = 600; // Adjust to your preferred height
 });
 
-document.getElementById('new-dog').addEventListener('click', function() {
-    fetch('https://dog.ceo/api/breeds/image/random')
+document.getElementById('new-dog').addEventListener('click', callApi);
+
+function callApi() {
+      fetch('https://dog.ceo/api/breeds/image/random')
         .then(response => response.json())
         .then(data => {
             let dogContainer = document.getElementById('dog-container');
@@ -19,5 +22,5 @@ document.getElementById('new-dog').addEventListener('click', function() {
             dogContainer.appendChild(dogImage);
         })
         .catch(error => console.error('Error:', error));
-});
 
+}
